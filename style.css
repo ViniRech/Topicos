@@ -13,8 +13,8 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
+    ;
 }
 
 .cabecalho {
@@ -53,6 +53,12 @@
     background-color: var(--branco);
     color: var(--azul-extremos);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: 0.3s;
+}
+
+.menu-botao:hover {
+    background-color: var(--preto);
+    color: var(--azul-enfeites);
 }
 
 .marketing {
@@ -83,6 +89,7 @@
 
 .clientes-titulo {
     grid-column: 1 / 4;
+    padding: 20px;
     color: var(--branco);
     font-weight: 400;
     text-align: center;
@@ -94,6 +101,7 @@
     justify-content: center;
     justify-items: center;
     justify-self: center;
+    list-style: none;
 }
 
 .clientes-lista-circulo {
@@ -111,8 +119,11 @@
 .clientes-lista-dados {
     background-color: var(--branco);
     border-radius: 15px;
+    min-width: 9rem;
+    min-height: 10rem;
     padding: 20% 10% 10%;
     margin-top: -30px;
+    list-style: none;
 }
 
 .clientes-lista-dados-itens {
@@ -126,9 +137,135 @@
 .clientes-lista-dados-icone {
     width: 1.5rem;
     height: auto;
+    margin-right: 5px;
 }
 
 .clientes-lista-dados-nome {
     text-align: center;
-    padding: 15px 10px 10px;
+    margin-top: 30px;
+}
+
+.planos {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    color: var(--branco);
+}
+
+.planos-titulo {
+    grid-column: 1 / 4;
+    padding: 20px 0 50px;
+    color: var(--preto);
+    text-align: center;
+    font-weight: 400;
+}
+
+.planos-lista {
+    background-color: var(--azul-comercio);
+    min-height: 11rem;
+    min-width: 7.5rem;
+    padding: 15px;
+    border-radius: 15px;
+    list-style: none;
+}
+
+.planos-lista-dinheiro {
+    text-align: right;
+    padding-top: 5px;
+    border-bottom: 1px var(--branco) solid;
+}
+
+.planos-lista-lista {
+    padding-top: 10px;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.formulario {
+    background-color: var(--azul-comercio);
+    padding: 20px;
+}
+
+.formulario-titulo {
+    color: var(--branco);
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0 50px;
+}
+
+.form {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.form-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+    justify-items: center;
+}
+
+.form-dado {
+    display: block;
+    max-width: 9rem;
+    height: 22px;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 10px;
+}
+
+::placeholder {
+    color: var(--preto);
+}
+
+.form-botao {
+    margin: 2rem;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--branco);
+    color: var(--preto);
+    transition: 0.3s;
+}
+
+.form-botao:hover {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.rodape {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    justify-items: center;
+    background-color: var(--azul-extremos);
+    color: var(--branco);
+    padding: 20px;
+} 
+
+.rodape-titulo {
+    grid-column: 1 / 4; 
+    font-weight: 400;
+}
+
+.rodape-texto {
+    display: grid;
+    align-items: center;
+}
+
+.rodape-redes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    padding: 20px;
+}
+
+.rodape-redes-rede {
+    width: 2rem;
+    height: auto;
 }
