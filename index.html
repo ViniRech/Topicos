@@ -30,6 +30,12 @@
     <header class="cabecalho">
         <img src="img/f.png" alt="F" class="cabecalho-logo">
         <nav class="menu">
+            <input type="checkbox" class="menu-fake">
+            <div class="menu-linhas">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <a href="" class="menu-link">Quem somos</a>
             <a href="" class="menu-link">Nossos planos</a>
             <button class="menu-botao">LOGIN</button>
@@ -43,98 +49,104 @@
 
     <section class="clientes">
         <h3 class="clientes-titulo">Nossos clientes:</h3>
-        <ul class="clientes-lista">
-            <li class="clientes-lista-circulo">
-                <img src="img/usuario.png" alt="Ícone de usuário" class="clientes-lista-circulo-imagem">
-            </li>
-            <ul class="clientes-lista-dados">
-                <li class="clientes-lista-dados-itens">
-                    <img class="clientes-lista-dados-icone" src="img/estrela.png" alt="Estrela de nascimento">
-                    <p>05/02/1939</p>
+        <div class="clientes-conteudo">
+            <ul class="clientes-lista">
+                <li class="clientes-lista-circulo">
+                    <img src="img/usuario.png" alt="Ícone de usuário" class="clientes-lista-circulo-imagem">
                 </li>
-                <li class="clientes-lista-dados-itens">
-                    <img class="clientes-lista-dados-icone" src="img/cruz.png" alt="Cruz de morte">
-                    <p>06/12/2020</p>
-                </li>
-                <li class="clientes-lista-dados-nome">
-                    <p>Enzo da Silva</p>
-                </li>
+                <ul class="clientes-lista-dados">
+                    <li class="clientes-lista-dados-itens">
+                        <img class="clientes-lista-dados-icone" src="img/estrela.png" alt="Estrela de nascimento">
+                        <p>05/02/1939</p>
+                    </li>
+                    <li class="clientes-lista-dados-itens">
+                        <img class="clientes-lista-dados-icone" src="img/cruz.png" alt="Cruz de morte">
+                        <p>06/12/2020</p>
+                    </li>
+                    <li class="clientes-lista-dados-nome">
+                        <p>Enzo da Silva</p>
+                    </li>
+                </ul>
             </ul>
-        </ul>
-        <ul class="clientes-lista">
-            <li class="clientes-lista-circulo">
-                <img src="img/usuario.png" alt="Ícone de usuário" class="clientes-lista-circulo-imagem">
-            </li>
-            <ul class="clientes-lista-dados">
-                <li class="clientes-lista-dados-itens">
-                    <img class="clientes-lista-dados-icone" src="img/estrela.png" alt="Estrela de nascimento">
-                    <p>09/04/1900</p>
+            <ul class="clientes-lista">
+                <li class="clientes-lista-circulo">
+                    <img src="img/usuario.png" alt="Ícone de usuário" class="clientes-lista-circulo-imagem">
                 </li>
-                <li class="clientes-lista-dados-itens">
-                    <img class="clientes-lista-dados-icone" src="img/cruz.png" alt="Cruz de morte">
-                    <p>09/04/2000</p>
-                </li>
-                <li class="clientes-lista-dados-nome">
-                    <p>Valentina Vitória</p>
-                </li>
+                <ul class="clientes-lista-dados">
+                    <li class="clientes-lista-dados-itens">
+                        <img class="clientes-lista-dados-icone" src="img/estrela.png" alt="Estrela de nascimento">
+                        <p>09/04/1900</p>
+                    </li>
+                    <li class="clientes-lista-dados-itens">
+                        <img class="clientes-lista-dados-icone" src="img/cruz.png" alt="Cruz de morte">
+                        <p>09/04/2000</p>
+                    </li>
+                    <li class="clientes-lista-dados-nome">
+                        <p>Valentina Vitória</p>
+                    </li>
+                </ul>
             </ul>
-        </ul>
-        <ul class="clientes-lista">
-            <li class="clientes-lista-circulo">
-                <img src="img/usuario.png" alt="Ícone de usuário" class="clientes-lista-circulo-imagem">
-            </li>
-            <ul class="clientes-lista-dados">
-                <li class="clientes-lista-dados-itens">
-                    <img class="clientes-lista-dados-icone" src="img/estrela.png" alt="Estrela de nascimento">
-                    <p>25/01/2000</p>
+            <ul class="clientes-lista">
+                <li class="clientes-lista-circulo">
+                    <img src="img/usuario.png" alt="Ícone de usuário" class="clientes-lista-circulo-imagem">
                 </li>
-                <li class="clientes-lista-dados-itens">
-                    <img class="clientes-lista-dados-icone" src="img/cruz.png" alt="Cruz de morte">
-                    <p>14/03/2019</p>
-                </li>
-                <li class="clientes-lista-dados-nome">
-                    <p>Mariana Nicole</p>
-                </li>
+                <ul class="clientes-lista-dados">
+                    <li class="clientes-lista-dados-itens">
+                        <img class="clientes-lista-dados-icone" src="img/estrela.png" alt="Estrela de nascimento">
+                        <p>25/01/2000</p>
+                    </li>
+                    <li class="clientes-lista-dados-itens">
+                        <img class="clientes-lista-dados-icone" src="img/cruz.png" alt="Cruz de morte">
+                        <p>14/03/2019</p>
+                    </li>
+                    <li class="clientes-lista-dados-nome">
+                        <p>Mariana Nicole</p>
+                    </li>
+                </ul>
             </ul>
-        </ul>
+        </div>
+
     </section>
 
     <section class="planos">
         <h3 class="planos-titulo">Nossos planos:</h3>
-        <ul class="planos-lista">
-            <li>
-                <p>Standart</p>
-                <p class="planos-lista-dinheiro">R$ 20,00</p>
-            </li>
+        <div class="planos-conteudo">
+            <ul class="planos-lista">
+                <li>
+                    <p>Standart</p>
+                    <p class="planos-lista-dinheiro">R$ 20,00</p>
+                </li>
 
-            <ul class="planos-lista-lista">
-                <li class="planos-lista-lista-item">Urna</li>
+                <ul class="planos-lista-lista">
+                    <li class="planos-lista-lista-item">Urna</li>
+                </ul>
             </ul>
-        </ul>
-        <ul class="planos-lista">
-            <li>
-                <p>Luxo</p>
-                <p class="planos-lista-dinheiro">R$ 50,00</p>
-            </li>
+            <ul class="planos-lista">
+                <li>
+                    <p>Luxo</p>
+                    <p class="planos-lista-dinheiro">R$ 50,00</p>
+                </li>
 
-            <ul class="planos-lista-lista">
-                <li class="planos-lista-lista-item">Urna</li>
-                <li class="planos-lista-lista-item">Transporte</li>
+                <ul class="planos-lista-lista">
+                    <li class="planos-lista-lista-item">Urna</li>
+                    <li class="planos-lista-lista-item">Transporte</li>
+                </ul>
             </ul>
-        </ul>
-        <ul class="planos-lista">
-            <li>
-                <p>Luxo extremo</p>
-                <p class="planos-lista-dinheiro">R$ 500,00</p>
-            </li>
+            <ul class="planos-lista">
+                <li>
+                    <p>Luxo extremo</p>
+                    <p class="planos-lista-dinheiro">R$ 500,00</p>
+                </li>
 
-            <ul class="planos-lista-lista">
-                <li class="planos-lista-lista-item">Urna</li>
-                <li class="planos-lista-lista-item">Transporte</li>
-                <li class="planos-lista-lista-item">Document.</li>
-                <li class="planos-lista-lista-item">Assist. 24h</li>
+                <ul class="planos-lista-lista">
+                    <li class="planos-lista-lista-item">Urna</li>
+                    <li class="planos-lista-lista-item">Transporte</li>
+                    <li class="planos-lista-lista-item">Document.</li>
+                    <li class="planos-lista-lista-item">Assist. 24h</li>
+                </ul>
             </ul>
-        </ul>
+        </div>
+
     </section>
 
     <section class="formulario">
@@ -156,14 +168,17 @@
 
     <footer class="rodape">
         <h3 class="rodape-titulo">Redes sociais:</h3>
-        <p class="rodape-texto">funeraria@gmail.com.br</p>
-        <div class="rodape-redes">
-            <img src="img/instagram.png" alt="Instagram" class="rodape-redes-rede">
-            <img src="img/facebook.png" alt="Facebook" class="rodape-redes-rede">
-            <img src="img/linkedin.png" alt="Linkedin" class="rodape-redes-rede">
-            <img src="img/whatsapp.png" alt="Whatsapp" class="rodape-redes-rede">
+        <div class="rodape-conteudo">
+            <p class="rodape-texto">funeraria@gmail.com.br</p>
+            <div class="rodape-redes">
+                <img src="img/instagram.png" alt="Instagram" class="rodape-redes-rede">
+                <img src="img/facebook.png" alt="Facebook" class="rodape-redes-rede">
+                <img src="img/linkedin.png" alt="Linkedin" class="rodape-redes-rede">
+                <img src="img/whatsapp.png" alt="Whatsapp" class="rodape-redes-rede">
+            </div>
+            <p class="rodape-texto">(99) 99999-9999</p>
         </div>
-        <p class="rodape-texto">(99) 99999-9999</p>
+
     </footer>
 
 </body>

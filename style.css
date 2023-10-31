@@ -30,10 +30,38 @@
 
 .menu {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
     justify-items: center;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.menu-fake {
+    position: absolute;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+}
+
+.menu-fake:checked ~ .menu-link, .menu-botao {
+    
+}
+
+.menu-linhas {
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+}
+
+.menu-linhas span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: var(--branco);
+    border-radius: 3px;
 }
 
 .menu-link {
@@ -82,8 +110,6 @@
 
 .clientes {
     background-color: var(--azul-cliente);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
 }
 
@@ -93,6 +119,14 @@
     color: var(--branco);
     font-weight: 400;
     text-align: center;
+}
+
+.clientes-conteudo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 4rem;
 }
 
 .clientes-lista {
@@ -146,22 +180,24 @@
 }
 
 .planos {
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
     padding: 20px;
     color: var(--branco);
 }
 
 .planos-titulo {
     grid-column: 1 / 4;
-    padding: 20px 0 50px;
+    padding: 1rem;
     color: var(--preto);
     text-align: center;
     font-weight: 400;
+}
+
+.planos-conteudo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 4rem;
 }
 
 .planos-lista {
@@ -171,6 +207,7 @@
     padding: 15px;
     border-radius: 15px;
     list-style: none;
+    margin-top: 1rem;
 }
 
 .planos-lista-dinheiro {
@@ -240,17 +277,21 @@
 }
 
 .rodape {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
-    justify-items: center;
     background-color: var(--azul-extremos);
     color: var(--branco);
     padding: 20px;
 } 
 
+.rodape-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+}
+
 .rodape-titulo {
     grid-column: 1 / 4; 
     font-weight: 400;
+    padding: 1rem;
+    text-align: center;
 }
 
 .rodape-texto {
@@ -263,9 +304,37 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 2rem;
     padding: 20px;
+    justify-items: center;
 }
 
 .rodape-redes-rede {
     width: 2rem;
     height: auto;
+}
+
+@media (max-width: 650px) {
+    
+    .clientes-conteudo {
+        grid-template-columns: auto;
+    }
+
+    .planos-conteudo {
+        grid-template-columns: auto;
+    }
+
+    .rodape-conteudo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rodape-texto {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    .form-conteudo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
