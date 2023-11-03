@@ -109,9 +109,13 @@
     border-radius: 15px;
     border: none;
     background-color: var(--branco);
-    color: var(--azul-extremos);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     transition: 0.3s;
+}
+
+.menu-botao a {
+    color: var(--azul-extremos);
+    text-decoration: none;
 }
 
 .menu-botao:hover {
@@ -362,11 +366,16 @@
         margin: 30px 30px 0 0;
     }
 
+    .menu-fake:checked, .menu-fake:checked ~ .menu-linhas {
+        position: fixed;
+    }
+
     .menu-lista {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 3rem 3rem 4rem;
         position: absolute;
+        position: fixed;
         z-index: 998;
         right: 0;
         top: 0;
@@ -384,6 +393,9 @@
 
     .menu-botao {
         background-color: var(--azul-extremos);
+    }
+
+    .menu-botao a {
         color: var(--branco);
     }
     
